@@ -1,14 +1,13 @@
-import Header from "/components/Header.jsx"
-import Entry from "/components/Entry.jsx"
-import data from "/src/data.js"
+import Header from "/components/Header"
+import Entry from "/components/Entry"
+import data from "/src/data"
 
 export default function App() {
     
     const entryElements = data.map((entry) => {
         return (
             <Entry
-                key = {entry.id}
-                // 
+                key={entry.id}
                 {...entry}
             />
         )
