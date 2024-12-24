@@ -1,8 +1,8 @@
-export default function(){
+export default function Header(props){
     return(
         <>
             <header className="header">
-                    <img src="/globe.png" alt="globe-image" />
+                    <img src={props.globe} />
                     <h1>my travel journal.</h1>
             </header>
         </>
